@@ -1,0 +1,25 @@
+POST http://localhost:3000/pessoas
+Content-Type: 'application/json'
+
+{
+    "nome":"Jose da Silva",
+    "dataNascimento":"1993/07/14",
+    "profissao":"Desenvolvedor"
+}
+###
+GET http://localhost:3000/pessoas
+
+###
+GET http://localhost:3000/pessoas?profissao=Analista
+
+###
+
+PATCH http://localhost:3000/pessoas/1
+Content-Type: 'application/json'
+
+{
+    "profissao":"Desenvolvedor Senior"
+}
+###
+DELETE http://localhost:3000/pessoas/1
+
